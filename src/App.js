@@ -1,23 +1,18 @@
-import logo from './logo.svg';
+import FirstPage from './components/FirstPage';
 import './App.css';
+import SecondPage from './components/SecondPage';
+import React from "react"
 
 function App() {
+  const [click, setClick] = React.useState(false)
+  const renderSecondPage = () => {
+    setClick(true)
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {!click && <FirstPage renderSecondPage={renderSecondPage} />}
+      {click && <SecondPage />}
     </div>
   );
 }

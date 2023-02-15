@@ -11,3 +11,115 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App{
+  display: flex;
+  justify-content: center;
+}
+
+.firstpage{
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+  background-color: #F5F7FB;
+  position:absolute;
+  height:100%;
+  width:100%;
+  justify-content: center;
+  
+}
+
+.start--quiz--button {
+  background-color: #4D5B9E;
+  color: white;
+  border-radius: 15px;
+  font-size: 16px;
+  width: 193px;
+  height: 52px;
+  cursor: pointer;
+}
+
+.secondpage{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 100px;
+  padding-bottom: 80px;
+  gap:40px;
+}
+
+.options{
+  border-style: solid;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+}
+.coloredOption{
+  border-style: solid;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+  background: aquamarine;
+}
+.greenOption{
+  border-style: solid;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+  background: greenyellow;
+}
+.redOption{
+  border-style: solid;
+  border-radius: 8px;
+  padding: 5px;
+  cursor: pointer;
+  background:red;
+}
+
+.quiz--component{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap:20px;
+}
+
+.quiz--component > hr{
+  width: 100%;
+}
+
+.options-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap:10px;
+  font-size: 14px;
+}
+
+.check--answers--button{
+  width: 120px;
+  height: 35px;
+  background: #4D5B9E;
+  border-radius: 10px;
+  color: white;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.button-container{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  align-content:space-between ;
+  gap:20px;
+}
+
+.question{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.button-container > a{
+  font-size: 13px;
+  font-weight: bold;
+}
